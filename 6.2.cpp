@@ -2,12 +2,21 @@
 // Created by Feichi Yang on 2020/6/28.
 //
 #include <iostream>
+#include <initializer_list>
 #include "Chapter6.h"
 using namespace std;
 
 void reset(int *ip)
 {
     *ip = 84;
+}
+
+void error_msg(initializer_list<string> il)
+{
+    for (auto &msg : il){
+        cout << msg << " ";
+    }
+    cout << endl;
 }
 
 int main()
@@ -19,5 +28,8 @@ int main()
     reset(&i);
     cout << i << endl;
 
+    string expected, actual;
+    expected = "Two"; actual = "One";
+    error_msg({"functionX", expected, actual});
     return 0;
 }
