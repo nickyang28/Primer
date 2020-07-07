@@ -13,19 +13,12 @@ int fact(int val)
     return ret;
 }
 
-int Fact(int res, int val)
-{
-    if (val == 1){
-        return res;
-    }
-    else{
-        return val * Fact(res, val - 1);
-    }
-}
-
 int myFact(int val)
 {
-    return Fact(1, val);
+    if (val == 1){
+        return 1;
+    }
+    return val * myFact(val - 1);
 }
 
 #endif //CHAPTER6_H

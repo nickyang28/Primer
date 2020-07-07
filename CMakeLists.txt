@@ -3,4 +3,4 @@ project(Primer)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Primer 6.4.cpp My_Print.h)
+add_executable(Primer 6.7.cpp)
