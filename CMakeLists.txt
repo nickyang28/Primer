@@ -3,4 +3,4 @@ project(Primer)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Primer 6.7.cpp)
+add_executable(Primer 7.3.1.cpp)
