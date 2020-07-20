@@ -3,4 +3,4 @@ project(Primer)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Primer rapidcsv_test.cpp)
+add_executable(Primer 9.5.cpp)
